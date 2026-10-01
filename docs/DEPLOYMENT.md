@@ -16,12 +16,16 @@ The host normally sets `PORT`. The default is `3000`.
 
 ## Render
 
+Render's free instance needs no code changes and runs the `Dockerfile` as is.
+
 1. New → Web Service, connect the repository.
-2. Runtime: **Docker**. Render uses the `Dockerfile`.
+2. Runtime: **Docker**. Instance type: **Free**.
 3. Add the environment variables above.
 4. Deploy, then open the URL.
 
-Free instances sleep when idle, so the first request can take about a minute. Use a paid instance if the demo needs to answer immediately.
+A free instance spins down after 15 minutes without inbound traffic, and the first request afterwards takes about a minute. Render includes 750 free instance hours a month, and one service running all month uses 744 in a 31-day month, so keep a single free service on the workspace.
+
+To keep it awake, add an HTTP monitor on the service URL in UptimeRobot (free plan: 5-minute interval, no card). The monitor is traffic like any other, and a check every 5 minutes keeps the instance running.
 
 ## Docker
 

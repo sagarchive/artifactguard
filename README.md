@@ -4,9 +4,22 @@ An agent that tells you what the evidence actually supports for a museum materia
 
 Built for the 2026 DEV / Sanity Challenge, Path One. Sanity Context MCP supplies the evidence; explicit rules decide.
 
+**Live demo:** https://artifactguard.onrender.com (no login; the first visit after a long idle can take a minute)
+
 **Dataset:** Sanity project `3yfxc6mg`, dataset `production` (public)
 
 ![Ethafoam against lead in a sealed case. Eight tests rate the lead coupon, two of them T, so the answer is CONFLICTED. A first-match keyword lookup would report permanent (P).](docs/img/flagship-case.png)
+
+## In plain words
+
+- **The problem:** things in a museum display case can slowly hurt the objects next to them. Glue, foam and paint can give off fumes that corrode metal or leave deposits.
+- **The test:** labs check materials with the Oddy test. They seal metal strips with the material for 28 days and see if the metal corrodes. A "pass" sounds final, but it only covers the one sample, lab and setup that was tested.
+- **This tool:** you pick a material, an object and how it will be displayed. It looks up the published test results and tells you what they really cover and what they do not. Every answer links to its sources.
+- **What it never does:** it never says "safe" and never gives a percentage. It only knows what a few published papers report. It is a thinking aid and does not replace a conservator.
+
+In more detail:
+
+Museums put glue, foam, paint and plastic in display cases next to objects. Some of these materials give off fumes that corrode metal or leave deposits. Conservators screen them with the Oddy test, which seals metal strips with a material for 28 days and rates the corrosion. A pass is reported as if it were a property of the material, but it only covers the batch, laboratory and setup that were tested. ArtifactGuard shows what the published evidence supports for the material, object and display you pick, where sources disagree, and what the sources do not say.
 
 ## The problem
 
