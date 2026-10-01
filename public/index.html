@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>ArtifactGuard — Evidence before exposure</title>
+    <meta
+      name="description"
+      content="A provenance-aware museum materials compatibility agent built on Sanity Context."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="ArtifactGuard — A test result is evidence, not a permanent property of a material"
+    />
+    <meta
+      property="og:description"
+      content="A museum materials compatibility agent. Sanity Context supplies structured evidence; explicit rules decide. No fake safety percentages."
+    />
+    <meta name="theme-color" content="#f4f0e7" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23202724'/%3E%3Cpath d='M9 22V10h7a4 4 0 010 8h-7' fill='none' stroke='%23f4f0e7' stroke-width='3'/%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="/assets/app.css" />
+  </head>
+  <body>
+    <a class="skip" href="#analyzer">Skip to analyzer</a>
+    <header class="topbar">
+      <a class="brand" href="/">ArtifactGuard</a>
+      <nav aria-label="Primary">
+        <a href="/" aria-current="page">Analyze</a><a href="/compare">Benchmark</a
+        ><a href="/method">Method</a>
+      </nav>
+      <span id="modeBadge" class="mode-badge" role="status">checking context…</span>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="eyebrow">Conservation evidence engine</div>
+        <h1>A test result is evidence.<br />It is not a permanent property of a material.</h1>
+        <p class="lede">
+          Check whether a material's test evidence actually applies to your object, formulation,
+          contact mode and enclosure.
+        </p>
+      </section>
+
+      <section class="panel" id="analyzer" aria-labelledby="analyzerTitle">
+        <div class="panel-head">
+          <div>
+            <div class="eyebrow">Scenario builder</div>
+            <h2 id="analyzerTitle">Can these coexist?</h2>
+          </div>
+          <div class="presets" role="group" aria-label="Example cases">
+            <span class="presets-label">Try a case</span
+            ><button type="button" class="chip featured" data-preset="terostat">
+              The PASS wasn't enough</button
+            ><button type="button" class="chip" data-preset="pvc">PVC touching paper</button
+            ><button type="button" class="chip" data-preset="klucel">
+              Same product, different batch</button
+            ><button type="button" class="chip" data-preset="labs">Labs disagree</button
+            ><button type="button" class="chip" data-preset="mdf">MDF and lead</button>
+          </div>
+        </div>
+        <form id="askForm" class="ask" novalidate>
+          <label for="question">Ask in plain English</label>
+          <div class="ask-row">
+            <input
+              id="question"
+              type="text"
+              maxlength="500"
+              autocomplete="off"
+              placeholder="Is Terostat-9220 okay next to lead in a sealed case, not touching?"
+            /><button class="button primary" type="submit" id="askGo" disabled>Ask</button>
+          </div>
+          <div id="askOut" class="ask-out" role="status"></div>
+        </form>
+        <form id="scenarioForm" class="scenario" novalidate>
+          <div class="field">
+            <label for="revision">Material / product revision</label>
+            <div class="select">
+              <select id="revision" required disabled>
+                <option value="">Loading…</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label for="artifact">Artifact material</label>
+            <div class="select">
+              <select id="artifact" required disabled>
+                <option value="">Loading…</option>
+              </select>
+            </div>
+          </div>
+          <fieldset class="field">
+            <legend>Environment</legend>
+            <div class="segmented" id="environment">
+              <label
+                ><input type="radio" name="environment" value="sealed" checked /><span
+                  >Sealed</span
+                ></label
+              ><label
+                ><input type="radio" name="environment" value="enclosed" /><span
+                  >Enclosed</span
+                ></label
+              ><label
+                ><input type="radio" name="environment" value="open" /><span
+                  >Open display</span
+                ></label
+              >
+            </div>
+          </fieldset>
+          <fieldset class="field">
+            <legend>Contact</legend>
+            <div class="segmented" id="contact">
+              <label
+                ><input type="radio" name="contact" value="indirect" checked /><span
+                  >No direct contact</span
+                ></label
+              ><label
+                ><input type="radio" name="contact" value="direct" /><span
+                  >Direct contact</span
+                ></label
+              >
+            </div>
+          </fieldset>
+          <div class="actions">
+            <button class="button primary" type="submit" id="go" disabled>Analyze evidence</button>
+            <p id="formError" class="form-error" role="alert" hidden></p>
+          </div>
+        </form>
+      </section>
+
+      <section id="result" class="result-shell" hidden aria-live="polite" tabindex="-1">
+        <div class="result-header">
+          <div>
+            <div class="eyebrow">Evidence disposition</div>
+            <div id="verdict" class="verdict">—</div>
+            <p id="verdictMeaning" class="verdict-meaning"></p>
+          </div>
+          <div id="resultMeta" class="result-meta"></div>
+        </div>
+        <p id="summary" class="result-summary"></p>
+        <div class="result-grid">
+          <section class="result-card">
+            <h3>Why</h3>
+            <div id="deductions"></div>
+          </section>
+          <section class="result-card">
+            <h3>What a flat lookup does</h3>
+            <div id="baseline"></div>
+          </section>
+        </div>
+        <section class="result-card sources-card" id="ratingsCard" hidden>
+          <h3>Oddy ratings behind this result</h3>
+          <div id="ratings"></div>
+        </section>
+        <section class="result-card sources-card">
+          <h3>Source trail</h3>
+          <div id="sources"></div>
+        </section>
+        <section class="result-card sources-card">
+          <h3>Knowledge Base context</h3>
+          <div id="knowledge"></div>
+        </section>
+        <section class="result-card sources-card">
+          <h3>Agent trace</h3>
+          <div id="trace"></div>
+        </section>
+      </section>
+
+      <section class="panel legend" aria-labelledby="legendTitle">
+        <div class="eyebrow">Reading a result</div>
+        <h2 id="legendTitle">Six dispositions. No percentages.</h2>
+        <dl id="legendList"></dl>
+      </section>
+
+      <section class="panel" aria-labelledby="calcTitle">
+        <div class="panel-head">
+          <div>
+            <div class="eyebrow">Physical context</div>
+            <h2 id="calcTitle">Enclosure concentration estimator</h2>
+          </div>
+          <p class="panel-note">
+            Simplified CCI relation <strong>C = E × A / (V × N)</strong>. It estimates concentration
+            only and sets no safety threshold.
+          </p>
+        </div>
+        <form id="calcForm" class="calc-grid" novalidate>
+          <div class="field">
+            <label for="E">E — emission rate (µg/m²/h)</label
+            ><input id="E" type="number" inputmode="decimal" step="any" min="0" value="2" />
+          </div>
+          <div class="field">
+            <label for="A">A — emitting area (m²)</label
+            ><input id="A" type="number" inputmode="decimal" step="any" min="0" value="1" />
+          </div>
+          <div class="field">
+            <label for="V">V — enclosure volume (m³)</label
+            ><input id="V" type="number" inputmode="decimal" step="any" min="0" value="0.5" />
+          </div>
+          <div class="field">
+            <label for="N">N — air exchange (h⁻¹)</label
+            ><input id="N" type="number" inputmode="decimal" step="any" min="0" value="0.25" />
+          </div>
+          <div class="actions wide">
+            <button class="button ghost" type="submit">Calculate</button>
+          </div>
+        </form>
+        <div id="calcResult" class="calc-result" role="status"></div>
+      </section>
+
+      <section class="closing">
+        <div class="eyebrow">Scope</div>
+        <h2>What a result does not mean</h2>
+        <p>
+          “No conflict found” means the scoped evidence did not reveal one. It is not a safety
+          guarantee and does not replace testing or a conservator’s judgment.
+        </p>
+      </section>
+    </main>
+    <footer><span>ArtifactGuard</span><span>DEV / Sanity Challenge 2026 — Path One</span></footer>
+    <script src="/assets/app.js" defer></script>
+  </body>
+</html>

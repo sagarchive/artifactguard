@@ -1,0 +1,46 @@
+{
+  "source": "oddy-interlab",
+  "table": "https://www.nature.com/articles/s40494-024-01174-9/tables/2",
+  "materials": [
+    {
+      "number": 1,
+      "description": "Ethafoam (low-density plastic foam made by expanding polyethylene)"
+    },
+    {
+      "number": 2,
+      "description": "Tygon S-50-HL (tube made of polyvinyl chloride)"
+    },
+    {
+      "number": 3,
+      "description": "Velcro (nylon and polyester are usually used in its manufacture)"
+    },
+    {
+      "number": 4,
+      "description": "Heat shrink tubing (made from flexible, flame retardant polyolefin)"
+    },
+    {
+      "number": 5,
+      "description": "Plain black rubber"
+    },
+    {
+      "number": 6,
+      "description": "Photo Archivakarton Chronos (paper for photographic conservation with a composition of 95–97% Alpha Cellulose)"
+    },
+    {
+      "number": 7,
+      "description": "Medium-density fiberboard (MDF, made up of 82% wood fiber, 9% urea-fomaldehyde resin glue, 8% water, and 1% paraffin wax)"
+    },
+    {
+      "number": 8,
+      "description": "Plywood board (made of birch wood sheets glued with phenolic resin)"
+    },
+    {
+      "number": 9,
+      "description": "MS-35 Sealing (hybrid modified silane; MS, polymer of one component. Although no further information is provided by the manufacturer, two possible “chemical skeletons” for modified silanes would be: MS-polyester or MS-polyurethane)"
+    },
+    {
+      "number": 10,
+      "description": "Polylactic acid filament for 3D printing"
+    }
+  ]
+}

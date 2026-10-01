@@ -1,0 +1,337 @@
+[
+  {
+    "id": "B01",
+    "name": "A failing current test outweighs an older passing one",
+    "kind": "synthetic-rule",
+    "scenario": {
+      "revisionIds": ["revision-generic-current"],
+      "artifactMaterialIds": ["artifact-lead"],
+      "environment": "sealed",
+      "contact": "indirect"
+    },
+    "expected": ["AVOID"],
+    "mustCodes": ["ODDY_FAIL", "FORMULATION_IDENTITY_UNCERTAIN"]
+  },
+  {
+    "id": "B02",
+    "name": "Terostat: the Oddy PASS did not cover the emitted compound",
+    "kind": "real-source-derived",
+    "scenario": {
+      "revisionIds": ["revision-terostat-historic"],
+      "artifactMaterialIds": ["artifact-lead"],
+      "environment": "sealed",
+      "contact": "indirect"
+    },
+    "expected": ["CONDITIONAL"],
+    "mustCodes": ["PASS_NOT_COMPREHENSIVE", "MATERIAL_INTERACTION", "IDENTITY_NOTE"],
+    "expectBaselineUnsupportedCertainty": true
+  },
+  {
+    "id": "B03",
+    "name": "Terostat: the reported effect is on exhibited objects generally, not only acid-sensitive metals",
+    "kind": "real-source-derived",
+    "scenario": {
+      "revisionIds": ["revision-terostat-historic"],
+      "artifactMaterialIds": ["artifact-silver"],
+      "environment": "sealed",
+      "contact": "indirect"
+    },
+    "expected": ["CONDITIONAL"],
+    "mustCodes": ["PASS_NOT_COMPREHENSIVE", "MATERIAL_INTERACTION"],
+    "expectBaselineUnsupportedCertainty": true
+  },
+  {
+    "id": "B04",
+    "name": "Terostat in an open display: no enclosed-case interaction, Oddy caveat remains",
+    "kind": "real-source-derived",
+    "scenario": {
+      "revisionIds": ["revision-terostat-historic"],
+      "artifactMaterialIds": ["artifact-paper"],
+      "environment": "open",
+      "contact": "indirect"
+    },
+    "expected": ["CONDITIONAL"],
+    "mustCodes": ["PASS_NOT_COMPREHENSIVE", "NO_COUPON_FOR_ARTIFACT"],
+    "mustNotCodes": ["MATERIAL_INTERACTION", "ENCLOSURE_ACCUMULATION_CONTEXT"],
+    "expectBaselineUnsupportedCertainty": true
+  },
+  {
+    "id": "B05",
+    "name": "Missing artifact material",
+    "kind": "policy",
+    "scenario": {
+      "revisionIds": ["revision-terostat-historic"],
+      "artifactMaterialIds": [],
+      "environment": "sealed",
+      "contact": "indirect"
+    },
+    "expected": ["INSUFFICIENT"],
+    "mustCodes": ["NO_ARTIFACT_MATERIAL"]
+  },
+  {
+    "id": "B06",
+    "name": "Missing product",
+    "kind": "policy",
+    "scenario": {
+      "revisionIds": [],
+      "artifactMaterialIds": ["artifact-paper"],
+      "environment": "open",
+      "contact": "indirect"
+    },
+    "expected": ["INSUFFICIENT"],
+    "mustCodes": ["NO_PRODUCT_REVISION"]
+  },
+  {
+    "id": "B07",
+    "name": "No product and no artifact",
+    "kind": "policy",
+    "scenario": {
+      "revisionIds": [],
+      "artifactMaterialIds": [],
+      "environment": "open",
+      "contact": "indirect"
+    },
+    "expected": ["INSUFFICIENT"],
+    "mustCodes": ["NO_PRODUCT_REVISION", "NO_ARTIFACT_MATERIAL"]
+  },
+  {
+    "id": "B08",
+    "name": "Unknown product revision",
+    "kind": "policy",
+    "scenario": {
+      "revisionIds": ["does-not-exist"],
+      "artifactMaterialIds": ["artifact-silver"],
+      "environment": "sealed",
+      "contact": "indirect"
+    },
+    "expected": ["INSUFFICIENT"],
+    "mustCodes": ["UNKNOWN_REVISION"]
+  },
+  {
+    "id": "B09",
+    "name": "Unknown artifact material is not silently dropped",
+    "kind": "policy",
+    "scenario": {
+      "revisionIds": ["revision-terostat-historic"],
+      "artifactMaterialIds": ["artifact-does-not-exist"],
+      "environment": "sealed",
+      "contact": "indirect"
+    },
+    "expected": ["INSUFFICIENT"],
+    "mustCodes": ["UNKNOWN_ARTIFACT_MATERIAL"]
+  },
+  {
+    "id": "B10",
+    "name": "Flexible PVC in direct contact",
+    "kind": "real-source-derived",
+    "scenario": {
+      "revisionIds": ["revision-flex-pvc-generic"],
+      "artifactMaterialIds": ["artifact-paper"],
+      "environment": "open",
+      "contact": "direct"
+    },
+    "expected": ["AVOID"],
+    "mustCodes": ["DIRECT_CONTACT_INTERACTION"]
+  },
+  {
+    "id": "B11",
+    "name": "Flexible PVC without direct contact",
+    "kind": "real-source-derived",
+    "scenario": {
+      "revisionIds": ["revision-flex-pvc-generic"],
+      "artifactMaterialIds": ["artifact-paper"],
+      "environment": "open",
+      "contact": "indirect"
+    },
+    "expected": ["INSUFFICIENT"],
+    "mustCodes": ["NO_ODDY_TEST"],
+    "mustNotCodes": ["DIRECT_CONTACT_INTERACTION"]
+  },
+  {
+    "id": "B12",
+    "name": "Flexible PVC emits benzoic acid, which CCI lists for copper",
+    "kind": "real-source-derived",
+    "scenario": {
+      "revisionIds": ["revision-flex-pvc-generic"],
+      "artifactMaterialIds": ["artifact-copper"],
+      "environment": "open",
+      "contact": "indirect"
+    },
+    "expected": ["INSUFFICIENT"],
+    "mustCodes": ["EMISSION_ARTIFACT_SENSITIVITY", "NO_ODDY_TEST"],
+    "mustNotCodes": ["DIRECT_CONTACT_INTERACTION"]
+  },
+  {
+    "id": "B13",
+    "name": "MDF and lead: all eight tests rate the lead coupon unsuitable",
+    "kind": "real-source-derived",
+    "scenario": {
+      "revisionIds": ["revision-medium-density-fiberboard"],
+      "artifactMaterialIds": ["artifact-lead"],
+      "environment": "sealed",
+      "contact": "indirect"
+    },
+    "expected": ["AVOID"],
+    "mustCodes": ["ODDY_FAIL", "EMISSION_ARTIFACT_SENSITIVITY"],
+    "mustNotCodes": ["MINOR_TEST_CONFLICT", "MAJOR_TEST_CONFLICT"]
+  },
+  {
+    "id": "B14",
+    "name": "An old test triggers the internal review policy",
+    "kind": "synthetic-rule",
+    "scenario": {
+      "revisionIds": ["revision-generic-2017"],
+      "artifactMaterialIds": ["artifact-lead"],
+      "environment": "sealed",
+      "contact": "indirect"
+    },
+    "expected": ["RETEST"],
+    "mustCodes": ["OLD_TEST_INTERNAL_TRIGGER"]
+  },
+  {
+    "id": "B15",
+    "name": "Sealed enclosure context is surfaced",
+    "kind": "synthetic-rule",
+    "scenario": {
+      "revisionIds": ["revision-paint-current"],
+      "artifactMaterialIds": ["artifact-paper"],
+      "environment": "sealed",
+      "contact": "indirect"
+    },
+    "expected": ["SUPPORTED"],
+    "mustCodes": ["ENCLOSURE_ACCUMULATION_CONTEXT"]
+  },
+  {
+    "id": "B16",
+    "name": "No conflict found stays bounded",
+    "kind": "synthetic-rule",
+    "scenario": {
+      "revisionIds": ["revision-paint-current"],
+      "artifactMaterialIds": ["artifact-paper"],
+      "environment": "open",
+      "contact": "indirect"
+    },
+    "expected": ["SUPPORTED"],
+    "mustCodes": ["NO_CONFLICT_FOUND"]
+  },
+  {
+    "id": "B17",
+    "name": "Ethafoam and lead: institutions split between permanent and temporary",
+    "kind": "real-source-derived",
+    "scenario": {
+      "revisionIds": ["revision-ethafoam"],
+      "artifactMaterialIds": ["artifact-lead"],
+      "environment": "sealed",
+      "contact": "indirect"
+    },
+    "expected": ["CONFLICTED"],
+    "mustCodes": ["MINOR_TEST_CONFLICT", "PROTOCOL_VARIATION"]
+  },
+  {
+    "id": "B18",
+    "name": "Ethafoam and silver: all eight tests rate the silver coupon permanent",
+    "kind": "real-source-derived",
+    "scenario": {
+      "revisionIds": ["revision-ethafoam"],
+      "artifactMaterialIds": ["artifact-silver"],
+      "environment": "sealed",
+      "contact": "indirect"
+    },
+    "expected": ["SUPPORTED"],
+    "mustCodes": ["EMISSION_REPORTED"],
+    "mustNotCodes": ["MINOR_TEST_CONFLICT", "MAJOR_TEST_CONFLICT"]
+  },
+  {
+    "id": "B19",
+    "name": "MS-35 sealing passes in most tests, but the 2025 study flags its phthalates",
+    "kind": "real-source-derived",
+    "scenario": {
+      "revisionIds": ["revision-ms-35-sealing"],
+      "artifactMaterialIds": ["artifact-lead"],
+      "environment": "sealed",
+      "contact": "indirect"
+    },
+    "expected": ["CONFLICTED"],
+    "mustCodes": ["MAJOR_TEST_CONFLICT", "PASS_NOT_COMPREHENSIVE", "MATERIAL_INTERACTION"]
+  },
+  {
+    "id": "B20",
+    "name": "Black rubber and silver: institutions split between permanent and unsuitable",
+    "kind": "real-source-derived",
+    "scenario": {
+      "revisionIds": ["revision-plain-black-rubber"],
+      "artifactMaterialIds": ["artifact-silver"],
+      "environment": "open",
+      "contact": "indirect"
+    },
+    "expected": ["CONFLICTED"],
+    "mustCodes": ["MAJOR_TEST_CONFLICT"]
+  },
+  {
+    "id": "B21",
+    "name": "Klucel G purchased in 2017 passed on every coupon",
+    "kind": "real-source-derived",
+    "scenario": {
+      "revisionIds": ["revision-cellulose-04"],
+      "artifactMaterialIds": ["artifact-lead"],
+      "environment": "open",
+      "contact": "indirect"
+    },
+    "expected": ["SUPPORTED"],
+    "mustCodes": ["NO_CONFLICT_FOUND"]
+  },
+  {
+    "id": "B22",
+    "name": "Klucel G purchased in 2021 corroded lead, and acetic acid was measured",
+    "kind": "real-source-derived",
+    "scenario": {
+      "revisionIds": ["revision-cellulose-05"],
+      "artifactMaterialIds": ["artifact-lead"],
+      "environment": "open",
+      "contact": "indirect"
+    },
+    "expected": ["CONDITIONAL"],
+    "mustCodes": ["ODDY_TEMPORARY", "EMISSION_ARTIFACT_SENSITIVITY"],
+    "mustNotCodes": ["NO_CONFLICT_FOUND"]
+  },
+  {
+    "id": "B23",
+    "name": "Klucel M, undated Deffner batch: unsuitable for lead",
+    "kind": "real-source-derived",
+    "scenario": {
+      "revisionIds": ["revision-cellulose-10"],
+      "artifactMaterialIds": ["artifact-lead"],
+      "environment": "open",
+      "contact": "indirect"
+    },
+    "expected": ["AVOID"],
+    "mustCodes": ["ODDY_FAIL"]
+  },
+  {
+    "id": "B24",
+    "name": "The same Klucel M batch is only temporary for copper",
+    "kind": "real-source-derived",
+    "scenario": {
+      "revisionIds": ["revision-cellulose-10"],
+      "artifactMaterialIds": ["artifact-copper"],
+      "environment": "open",
+      "contact": "indirect"
+    },
+    "expected": ["CONDITIONAL"],
+    "mustCodes": ["ODDY_TEMPORARY"],
+    "mustNotCodes": ["ODDY_FAIL"]
+  },
+  {
+    "id": "B25",
+    "name": "Klucel M purchased in 2021 passed on every coupon",
+    "kind": "real-source-derived",
+    "scenario": {
+      "revisionIds": ["revision-cellulose-11"],
+      "artifactMaterialIds": ["artifact-lead"],
+      "environment": "open",
+      "contact": "indirect"
+    },
+    "expected": ["SUPPORTED"],
+    "mustCodes": ["NO_CONFLICT_FOUND"]
+  }
+]

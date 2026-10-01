@@ -1,0 +1,5 @@
+{
+  "name":"artifactguard-studio","private":true,"version":"1.0.0","type":"module",
+  "scripts":{"dev":"sanity dev","deploy":"sanity deploy","schema:deploy":"sanity schema deploy"},
+  "dependencies":{"@sanity/vision":"^5.1.0","sanity":"^5.1.0","styled-components":"^6.1.0"}
+}

@@ -1,0 +1,151 @@
+{
+  "source": "ms-optimization",
+  "article": "https://www.nature.com/articles/s40494-025-01681-3",
+  "note": "Material numbers follow Table 1 of the 2025 paper (7 = MDF, 8 = plywood). The paper text sometimes labels 7 as birchwood and 8 as MDF, so statements about \"the two wood-based materials\" are recorded for both 7 and 8 and nothing is attributed to one of them alone.",
+  "observations": [
+    {
+      "materials": [
+        7,
+        8
+      ],
+      "compound": "acetic-acid",
+      "technique": "HS-SPME-trap-enrichment and DTD",
+      "observedEffect": "Acetic acid was detected at normalized peak areas greater than 0.7 a.u., far larger than in the other materials. The lead coupons of both materials were rated U.",
+      "quote": "Only the two materials with normalized acetic acid peaks greater than 0.7 (materials 7 and 8) caused the most severe tarnish on the corresponding lead coupons, severe enough to receive an unsuitable rating (U)."
+    },
+    {
+      "materials": [
+        3,
+        5,
+        6
+      ],
+      "compound": "acetic-acid",
+      "technique": "HS-SPME-trap-enrichment and DTD",
+      "observedEffect": "Acetic acid was detected at normalized peak areas below 0.1 a.u. It was found only with the enrichment step, not with single-enrichment HS-SPME.",
+      "quote": "HS-SPME-trap-enrichment and DTD extraction have comparable performance in terms of acetic acid detection for materials 3, 5, 6, 7, and 8, where normalized acid levels were less than 0.1 a.u. for materials 3, 5, and 6 and greater than 0.7 a.u. for materials 7 and 8."
+    },
+    {
+      "materials": [
+        1,
+        4,
+        9,
+        10
+      ],
+      "compound": "acetic-acid",
+      "technique": "DTD",
+      "observedEffect": "Acetic acid was detected by DTD but not by HS-SPME, at normalized peak areas below 0.2 a.u.",
+      "quote": "DTD extraction, however, identified acetic acid in four materials (materials 1, 4, 9, and 10) where HS-SPME did not detect it."
+    },
+    {
+      "materials": [
+        7,
+        8
+      ],
+      "compound": "formic-acid",
+      "technique": "DTD",
+      "observedEffect": "Formic acid was detected in the two wood-based materials. The paper describes copper and lead as very sensitive to it.",
+      "quote": "DTD analysis of the wood-based materials 7 (birchwood) and 8 (MDF) showed the presence of other organic acids, such as formic acid, to which copper and lead are very sensitive"
+    },
+    {
+      "materials": [
+        7,
+        8
+      ],
+      "compound": "carboxylic-acids",
+      "technique": "DTD and HS-SPME",
+      "observedEffect": "High acidic emissions were reported for the two wood-based materials. The paper notes that organic acids are known agents of corrosion.",
+      "quote": "GC-MS analysis of the two wood-based materials (7 and 8) showed evidence of high acidic emissions."
+    },
+    {
+      "materials": [
+        2,
+        3,
+        4,
+        6
+      ],
+      "compound": "carboxylic-acids",
+      "technique": "HS-SPME and DTD",
+      "observedEffect": "Carboxylic acids were detected. The authors say the VOCs emitted by these four temporary-rated materials could potentially be linked to the corrosion on their coupons, and that carboxylic acids have been associated with corrosion, protrusions, colour change and bleaching of artworks.",
+      "quote": "Materials 2, 3, 4, and 6, which all received temporary (T) ratings, emitted a number of VOCs that could potentially be linked to the corrosion observed on the metal coupons."
+    },
+    {
+      "materials": [
+        10
+      ],
+      "compound": "carboxylic-acids",
+      "technique": "HS-SPME and DTD",
+      "observedEffect": "Carboxylic acids other than lactic acid were detected. The authors note that carboxylic acids are known to corrode copper and lead, the two coupons rated U.",
+      "quote": "In addition, this material also emits other carboxylic acids, which are known to corrode copper and lead (the two coupons classified as unsuitable)."
+    },
+    {
+      "materials": [
+        10
+      ],
+      "compound": "lactic-acid",
+      "technique": "HS-SPME and DTD",
+      "observedEffect": "Lactic acid was detected. The paper notes that PLA has been shown to accelerate corrosion of Fe and Zn surfaces through its breakdown into lactide and lactic acid.",
+      "quote": "Lactic acid and its lactide were detected by HS-SPME and DTD in material 10 (polylactic acid filament, PLA)"
+    },
+    {
+      "materials": [
+        10
+      ],
+      "compound": "lactide",
+      "technique": "HS-SPME and DTD",
+      "observedEffect": "Lactide was detected together with lactic acid.",
+      "quote": "Lactic acid and its lactide were detected by HS-SPME and DTD in material 10 (polylactic acid filament, PLA)"
+    },
+    {
+      "materials": [
+        5
+      ],
+      "compound": "sulphur-derivatives",
+      "technique": "HS-SPME, DTD and DART-HRMS",
+      "observedEffect": "Sulphur compounds were emitted. The authors suggest they may be linked to the black tarnish on the silver and copper coupons, and note that sulfur is incorporated into many rubber products as a vulcanizing agent.",
+      "quote": "For material 5 the observation of sulfur-containing compounds may be linked to the corrosion observed on the silver and copper coupons as black tarnish"
+    },
+    {
+      "materials": [
+        1,
+        2,
+        3,
+        9
+      ],
+      "compound": "sulphur-derivatives",
+      "technique": "HS-SPME or DTD",
+      "observedEffect": "Sulphur-containing compounds were detected. The authors state that more work is needed to relate their amounts and types to risk levels for collections.",
+      "quote": "more work is needed to relate the amounts and types of sulfur-containing compounds identified by GC-MS to risk levels for collections."
+    },
+    {
+      "materials": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "compound": "flame-retardant-tcpp",
+      "technique": "material 6: HS-SPME and DTD; materials 5, 7 and 8: DTD only",
+      "observedEffect": "TCPP, a phosphate flame retardant, was detected. The authors note that flame retardants have been associated with corrosive reactions involving metals.",
+      "quote": "TCPP, a phosphate flame retardant, emitted by material 6 and detected by HS-SPME and DTD, and by material 5, 7 and 8 only detected by DTD, must also be considered as reactive species, since flame retardants have been associated with corrosive reactions involving metals"
+    },
+    {
+      "materials": [
+        3,
+        8
+      ],
+      "compound": "glycol-derivatives",
+      "technique": "material 3: HS-SPME, DTD and DART; material 8: DTD",
+      "observedEffect": "Glycols were detected. The authors note they can contribute to the softening of other plastic materials in their proximity.",
+      "quote": "Glycols, which are commonly used as co-solvents or plasticizers in adhesives can contribute to the softening of other plastic materials in their proximity"
+    },
+    {
+      "materials": [
+        9
+      ],
+      "compound": "phthalates",
+      "technique": "HS-SPME-trap-enrichment and DTD",
+      "observedEffect": "Of all ten materials analyzed, MS-35 sealant showed the largest number of phthalates in its emission profile. The authors conclude that despite passing the Oddy test it must be carefully considered before use in a museum setting.",
+      "quote": "Of all materials analyzed, material 9 (MS-35 Sealant) showed the largest number of phthalates in its emission profile, suggesting that despite passing the Oddy test, this material must be carefully considered before it is used in a museum setting."
+    }
+  ]
+}

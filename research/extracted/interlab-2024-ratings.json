@@ -1,0 +1,516 @@
+{
+  "source": "oddy-interlab",
+  "table": "https://www.nature.com/articles/s40494-024-01174-9/tables/7",
+  "transcription": "Table 7 is published as an image; transcribed by reading it and verified against the paper's own Table 8 counts in tests/extracted.test.mjs.",
+  "legend": {
+    "P": "permanent use (no corrosion)",
+    "T": "temporary use (slight corrosion)",
+    "U": "unsuitable use (large amount of corrosion)"
+  },
+  "ratings": {
+    "I": [
+      {
+        "material": 1,
+        "silver": "P",
+        "copper": "P",
+        "lead": "P",
+        "overall": "P"
+      },
+      {
+        "material": 2,
+        "silver": "P",
+        "copper": "P",
+        "lead": "P",
+        "overall": "P"
+      },
+      {
+        "material": 3,
+        "silver": "P",
+        "copper": "T",
+        "lead": "P",
+        "overall": "T"
+      },
+      {
+        "material": 4,
+        "silver": "P",
+        "copper": "T",
+        "lead": "T",
+        "overall": "T"
+      },
+      {
+        "material": 5,
+        "silver": "U",
+        "copper": "U",
+        "lead": "U",
+        "overall": "U"
+      },
+      {
+        "material": 6,
+        "silver": "P",
+        "copper": "P",
+        "lead": "P",
+        "overall": "P"
+      },
+      {
+        "material": 7,
+        "silver": "P",
+        "copper": "T",
+        "lead": "U",
+        "overall": "U"
+      },
+      {
+        "material": 8,
+        "silver": "T",
+        "copper": "U",
+        "lead": "U",
+        "overall": "U"
+      },
+      {
+        "material": 9,
+        "silver": "P",
+        "copper": "U",
+        "lead": "P",
+        "overall": "U"
+      },
+      {
+        "material": 10,
+        "silver": "P",
+        "copper": "U",
+        "lead": "T",
+        "overall": "U"
+      }
+    ],
+    "II": [
+      {
+        "material": 1,
+        "silver": "P",
+        "copper": "T",
+        "lead": "T",
+        "overall": "T"
+      },
+      {
+        "material": 2,
+        "silver": "P",
+        "copper": "U",
+        "lead": "T",
+        "overall": "U"
+      },
+      {
+        "material": 3,
+        "silver": "T",
+        "copper": "U",
+        "lead": "U",
+        "overall": "U"
+      },
+      {
+        "material": 4,
+        "silver": "P",
+        "copper": "T",
+        "lead": "T",
+        "overall": "T"
+      },
+      {
+        "material": 5,
+        "silver": "U",
+        "copper": "U",
+        "lead": "U",
+        "overall": "U"
+      },
+      {
+        "material": 6,
+        "silver": "P",
+        "copper": "T",
+        "lead": "U",
+        "overall": "U"
+      },
+      {
+        "material": 7,
+        "silver": "U",
+        "copper": "U",
+        "lead": "U",
+        "overall": "U"
+      },
+      {
+        "material": 8,
+        "silver": "P",
+        "copper": "T",
+        "lead": "U",
+        "overall": "U"
+      },
+      {
+        "material": 9,
+        "silver": "T",
+        "copper": "T",
+        "lead": "U",
+        "overall": "U"
+      },
+      {
+        "material": 10,
+        "silver": "P",
+        "copper": "T",
+        "lead": "U",
+        "overall": "U"
+      }
+    ],
+    "III": [
+      {
+        "material": 1,
+        "silver": "P",
+        "copper": "P",
+        "lead": "P",
+        "overall": "P"
+      },
+      {
+        "material": 2,
+        "silver": "P",
+        "copper": "T",
+        "lead": "T",
+        "overall": "T"
+      },
+      {
+        "material": 3,
+        "silver": "P",
+        "copper": "T",
+        "lead": "T",
+        "overall": "T"
+      },
+      {
+        "material": 4,
+        "silver": "P",
+        "copper": "T",
+        "lead": "U",
+        "overall": "U"
+      },
+      {
+        "material": 5,
+        "silver": "U",
+        "copper": "U",
+        "lead": "U",
+        "overall": "U"
+      },
+      {
+        "material": 6,
+        "silver": "P",
+        "copper": "T",
+        "lead": "P",
+        "overall": "T"
+      },
+      {
+        "material": 7,
+        "silver": "P",
+        "copper": "T",
+        "lead": "U",
+        "overall": "U"
+      },
+      {
+        "material": 8,
+        "silver": "P",
+        "copper": "T",
+        "lead": "U",
+        "overall": "U"
+      },
+      {
+        "material": 9,
+        "silver": "P",
+        "copper": "P",
+        "lead": "P",
+        "overall": "P"
+      },
+      {
+        "material": 10,
+        "silver": "T",
+        "copper": "U",
+        "lead": "U",
+        "overall": "U"
+      }
+    ],
+    "IV": [
+      {
+        "material": 1,
+        "silver": "P",
+        "copper": "P",
+        "lead": "P",
+        "overall": "P"
+      },
+      {
+        "material": 2,
+        "silver": "P",
+        "copper": "P",
+        "lead": "P",
+        "overall": "P"
+      },
+      {
+        "material": 3,
+        "silver": "P",
+        "copper": "P",
+        "lead": "P",
+        "overall": "P"
+      },
+      {
+        "material": 4,
+        "silver": "P",
+        "copper": "P",
+        "lead": "T",
+        "overall": "T"
+      },
+      {
+        "material": 5,
+        "silver": "T",
+        "copper": "U",
+        "lead": "T",
+        "overall": "U"
+      },
+      {
+        "material": 6,
+        "silver": "P",
+        "copper": "P",
+        "lead": "T",
+        "overall": "T"
+      },
+      {
+        "material": 7,
+        "silver": "P",
+        "copper": "P",
+        "lead": "U",
+        "overall": "U"
+      },
+      {
+        "material": 8,
+        "silver": "P",
+        "copper": "P",
+        "lead": "U",
+        "overall": "U"
+      },
+      {
+        "material": 9,
+        "silver": "P",
+        "copper": "P",
+        "lead": "P",
+        "overall": "P"
+      },
+      {
+        "material": 10,
+        "silver": "P",
+        "copper": "U",
+        "lead": "U",
+        "overall": "U"
+      }
+    ],
+    "V": [
+      {
+        "material": 1,
+        "silver": "P",
+        "copper": "P",
+        "lead": "T",
+        "overall": "T"
+      },
+      {
+        "material": 2,
+        "silver": "P",
+        "copper": "P",
+        "lead": "T",
+        "overall": "T"
+      },
+      {
+        "material": 3,
+        "silver": "P",
+        "copper": "P",
+        "lead": "T",
+        "overall": "T"
+      },
+      {
+        "material": 4,
+        "silver": "P",
+        "copper": "P",
+        "lead": "T",
+        "overall": "T"
+      },
+      {
+        "material": 5,
+        "silver": "P",
+        "copper": "U",
+        "lead": "P",
+        "overall": "U"
+      },
+      {
+        "material": 6,
+        "silver": "P",
+        "copper": "P",
+        "lead": "T",
+        "overall": "T"
+      },
+      {
+        "material": 7,
+        "silver": "P",
+        "copper": "T",
+        "lead": "U",
+        "overall": "U"
+      },
+      {
+        "material": 8,
+        "silver": "P",
+        "copper": "T",
+        "lead": "U",
+        "overall": "U"
+      },
+      {
+        "material": 9,
+        "silver": "P",
+        "copper": "P",
+        "lead": "P",
+        "overall": "P"
+      },
+      {
+        "material": 10,
+        "silver": "P",
+        "copper": "U",
+        "lead": "T",
+        "overall": "U"
+      }
+    ],
+    "VI": [
+      {
+        "material": 1,
+        "silver": "P",
+        "copper": "P",
+        "lead": "P",
+        "overall": "P"
+      },
+      {
+        "material": 2,
+        "silver": "T",
+        "copper": "P",
+        "lead": "P",
+        "overall": "T"
+      },
+      {
+        "material": 3,
+        "silver": "P",
+        "copper": "P",
+        "lead": "P",
+        "overall": "P"
+      },
+      {
+        "material": 4,
+        "silver": "P",
+        "copper": "P",
+        "lead": "T",
+        "overall": "T"
+      },
+      {
+        "material": 5,
+        "silver": "U",
+        "copper": "U",
+        "lead": "P",
+        "overall": "U"
+      },
+      {
+        "material": 6,
+        "silver": "P",
+        "copper": "P",
+        "lead": "T",
+        "overall": "T"
+      },
+      {
+        "material": 7,
+        "silver": "P",
+        "copper": "P",
+        "lead": "U",
+        "overall": "U"
+      },
+      {
+        "material": 8,
+        "silver": "T",
+        "copper": "U",
+        "lead": "U",
+        "overall": "U"
+      },
+      {
+        "material": 9,
+        "silver": "P",
+        "copper": "T",
+        "lead": "P",
+        "overall": "T"
+      },
+      {
+        "material": 10,
+        "silver": "P",
+        "copper": "U",
+        "lead": "U",
+        "overall": "U"
+      }
+    ],
+    "VII": [
+      {
+        "material": 1,
+        "silver": "P",
+        "copper": "P",
+        "lead": "P",
+        "overall": "P"
+      },
+      {
+        "material": 2,
+        "silver": "P",
+        "copper": "P",
+        "lead": "P",
+        "overall": "P"
+      },
+      {
+        "material": 3,
+        "silver": "P",
+        "copper": "P",
+        "lead": "T",
+        "overall": "T"
+      },
+      {
+        "material": 4,
+        "silver": "P",
+        "copper": "P",
+        "lead": "T",
+        "overall": "T"
+      },
+      {
+        "material": 5,
+        "silver": "P",
+        "copper": "U",
+        "lead": "U",
+        "overall": "U"
+      },
+      {
+        "material": 6,
+        "silver": "P",
+        "copper": "P",
+        "lead": "P",
+        "overall": "P"
+      },
+      {
+        "material": 7,
+        "silver": "P",
+        "copper": "P",
+        "lead": "U",
+        "overall": "U"
+      },
+      {
+        "material": 8,
+        "silver": "P",
+        "copper": "P",
+        "lead": "U",
+        "overall": "U"
+      },
+      {
+        "material": 9,
+        "silver": "P",
+        "copper": "P",
+        "lead": "P",
+        "overall": "P"
+      },
+      {
+        "material": 10,
+        "silver": "P",
+        "copper": "U",
+        "lead": "U",
+        "overall": "U"
+      }
+    ]
+  }
+}

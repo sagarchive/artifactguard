@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>ArtifactGuard — Benchmark</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23202724'/%3E%3Cpath d='M9 22V10h7a4 4 0 010 8h-7' fill='none' stroke='%23f4f0e7' stroke-width='3'/%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="/assets/app.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="/">ArtifactGuard</a>
+      <nav aria-label="Primary">
+        <a href="/">Analyze</a><a href="/compare" aria-current="page">Benchmark</a
+        ><a href="/method">Method</a>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="hero compact">
+        <div class="eyebrow">Counterfactual</div>
+        <h1>What structure changes.</h1>
+        <p class="lede">
+          Distinct scenarios, run against ArtifactGuard's resolver and a first-match keyword
+          baseline written for this project. The baseline is not a production RAG system. It
+          isolates one failure: flattening retrieved evidence into a conclusion. Some cases are
+          synthetic rule tests.
+        </p>
+      </section>
+      <section class="panel">
+        <div class="stats" id="stats"><p>Loading benchmark…</p></div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Case</th>
+                <th>ArtifactGuard</th>
+                <th>Keyword baseline</th>
+                <th>Gate</th>
+              </tr>
+            </thead>
+            <tbody id="benchmarkRows"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <span>ArtifactGuard</span><span>Reproduce with <code>npm run benchmark</code></span>
+    </footer>
+    <script type="module" src="/assets/compare.js"></script>
+  </body>
+</html>

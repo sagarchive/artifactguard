@@ -1,0 +1,73 @@
+{
+  "source": "oddy-interlab",
+  "tables": [
+    "https://www.nature.com/articles/s40494-024-01174-9/tables/3",
+    "https://www.nature.com/articles/s40494-024-01174-9/tables/4",
+    "https://www.nature.com/articles/s40494-024-01174-9/tables/5"
+  ],
+  "common": {
+    "temperatureC": 60,
+    "durationDays": 28,
+    "sampleMassG": 2,
+    "waterToVolumeRatio": "1:100 (recommended)",
+    "note": "Section \"Experimental Interlaboratory test\": comparative 3-in-1 Oddy test (28 days, 60 ºC); materials blind tested in duplicate."
+  },
+  "institutions": {
+    "I": {
+      "couponAbrasion": "P600 sandpaper",
+      "vesselType": "test tube",
+      "vesselVolumeMl": 50,
+      "waterVolumeMl": 0.5,
+      "stopper": "silicone",
+      "glasswareCleaning": "New glassware was used and hand washed with a 2% solution of Decon 90 in deionized water. The test tubes remained submerged in the solution for several hours, ensuring that no air bubbles were trapped in the tubes. Then rinsed in distilled water overnight and subsequently rinsed again in distilled water several more times. Finally washed with technical grade ethanol"
+    },
+    "II": {
+      "couponAbrasion": "P600 sandpaper",
+      "vesselType": "test tube",
+      "vesselVolumeMl": 150,
+      "waterVolumeMl": 1.5,
+      "stopper": "silicone",
+      "glasswareCleaning": "New glassware was used. It was rinsed with a 0.1% solution of ZVG Washing up liquid HS 50420–010 in tap water. Then rinsed again several times (until no bubbles were formed) with demineralized water, air-dried, rinsed with pure ethanol and finally air dried"
+    },
+    "III": {
+      "couponAbrasion": "glass bristle brushes",
+      "vesselType": "Erlenmeyer flask with ground glass lid",
+      "vesselVolumeMl": 250,
+      "waterVolumeMl": 2.5,
+      "stopper": "glass lid",
+      "glasswareCleaning": "New glassware was used for this experiment, all Erlenmeyer flask were rinsed with deionized water and dried in the oven overnight"
+    },
+    "IV": {
+      "couponAbrasion": "1500 grit micromesh pad",
+      "vesselType": "jar",
+      "vesselVolumeMl": 135,
+      "waterVolumeMl": 1.23,
+      "stopper": "silicone",
+      "glasswareCleaning": "Schott glassware and caps were washed with detergent in warm water (Deconex 20 NS-x, 250 mL per 10 L water, submerged in a tub), rinsed with tap water, deionized water and MQ water. All pieces were ultrasonicated for 15 min in MQ water and dried in an oven at 110 °C for 16 hSilicone stoppers were rinsed with deionized water and left to air dry. Three incisions were cut into each stopper with a scalpel"
+    },
+    "V": {
+      "couponAbrasion": "P600 sandpaper",
+      "vesselType": "test tube",
+      "vesselVolumeMl": 50,
+      "waterVolumeMl": 0.5,
+      "stopper": "silicone",
+      "glasswareCleaning": "New glassware was used and glassware was manually cleaned with Alconox (1%) detergent. A sponge was dedicated for washing Oddy testing glassware. Glassware was rinsed with deionized water several times and finally washed with ACS acetone. All containers were air-dried completely"
+    },
+    "VI": {
+      "couponAbrasion": "1500 grit micromesh pad",
+      "vesselType": "jar",
+      "vesselVolumeMl": 100,
+      "waterVolumeMl": 1,
+      "stopper": "silicone",
+      "glasswareCleaning": "Schott glasses, caps, glass vials and silicone stoppers were left to soak in a 5% Decon 90/DI water solution for 4 h, manually washed with a clean sponge, and subsequently rinsed with DI water 3–5 timesThe Schott glasses, caps, glass vials and silicone stoppers were then wrapped in aluminum foil and placed in an oven at 105 °C to dry overnight (8 h +)"
+    },
+    "VII": {
+      "couponAbrasion": "1800 grit micromesh pad",
+      "vesselType": "test tube",
+      "vesselVolumeMl": 54,
+      "waterVolumeMl": 0.5,
+      "stopper": "silicone",
+      "glasswareCleaning": "Standard laboratory dishwasher (with Extran AP17 liquid detergent)"
+    }
+  }
+}

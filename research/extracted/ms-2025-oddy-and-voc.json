@@ -1,0 +1,96 @@
+{
+  "source": "ms-optimization",
+  "table": "https://www.nature.com/articles/s40494-025-01681-3/tables/3",
+  "rows": [
+    {
+      "material": 1,
+      "silver": "P",
+      "copper": "P",
+      "lead": "P",
+      "overall": "P",
+      "hsSpme": "AlcoholsAldehydesPhthalates",
+      "dtd": "AlcoholsAldehydesPhthalatesCarboxylic acids (≥C2)Sulphur derivatives"
+    },
+    {
+      "material": 2,
+      "silver": "P",
+      "copper": "T",
+      "lead": "P",
+      "overall": "T",
+      "hsSpme": "AlcoholsAldehydesCarboxylic acids (≥C3)Phthalates",
+      "dtd": "AlcoholsAldehydesCarboxylic acids (≥C9)PhthalatesSulphur derivatives"
+    },
+    {
+      "material": 3,
+      "silver": "P",
+      "copper": "P",
+      "lead": "T",
+      "overall": "T",
+      "hsSpme": "AlcoholsAldehydesPhthalatesCarboxylic acids (≥C2)Glycol derivativesSulphur derivatives",
+      "dtd": "AlcoholsAldehydesPhthalatesCarboxylic acids (≥C1)Glycol derivativesSulphur derivatives"
+    },
+    {
+      "material": 4,
+      "silver": "P",
+      "copper": "P",
+      "lead": "T",
+      "overall": "T",
+      "hsSpme": "AldehydesCarboxylic acids (≥C2)Phthalates",
+      "dtd": "AlcoholsAldehydesCarboxylic acids (≥C2)Phthalates"
+    },
+    {
+      "material": 5,
+      "silver": "U",
+      "copper": "U",
+      "lead": "T",
+      "overall": "U",
+      "hsSpme": "AlcoholsAldehydesCarboxylic acids (≥C3)PhthalatesSulphur derivatives",
+      "dtd": "AlcoholsAldehydesCarboxylic acids (≥C1)Flame retardantSulphur derivativesPhthalates"
+    },
+    {
+      "material": 6,
+      "silver": "P",
+      "copper": "P",
+      "lead": "T",
+      "overall": "T",
+      "hsSpme": "AldehydesCarboxylic acids (≥C2)Flame retardantPhthalates",
+      "dtd": "AlcoholsAldehydesCarboxylic acids (≥C1)Flame retardantPhthalates"
+    },
+    {
+      "material": 7,
+      "silver": "P",
+      "copper": "P",
+      "lead": "U",
+      "overall": "U",
+      "hsSpme": "AldehydesCarboxylic acids (≥C2)Phthalates",
+      "dtd": "AlcoholsAldehydesCarboxylic acids (≥C2)Flame retardantPhthalates"
+    },
+    {
+      "material": 8,
+      "silver": "P",
+      "copper": "T",
+      "lead": "U",
+      "overall": "U",
+      "hsSpme": "AldehydesCarboxylic acids (≥C2)",
+      "dtd": "AlcoholsAldehydesCarboxylic acids (≥C1)Flame retardantGlycol derivativesPhthalates"
+    },
+    {
+      "material": 9,
+      "silver": "P",
+      "copper": "P",
+      "lead": "P",
+      "overall": "P",
+      "hsSpme": "AlcoholsAldehydesPhthalates",
+      "dtd": "AlcoholsAldehydesCarboxylic acids (≥C2)PhthalatesSulphur derivatives"
+    },
+    {
+      "material": 10,
+      "silver": "P",
+      "copper": "U",
+      "lead": "U",
+      "overall": "U",
+      "hsSpme": "AldehydesCarboxylic acids (≥C3)Lactic acidLactide",
+      "dtd": "AlcoholsAldehydesCarboxylic acids (≥C1)Lactic acidLactidePhthalates"
+    }
+  ]
+}

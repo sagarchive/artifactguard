@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>ArtifactGuard — Method</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23202724'/%3E%3Cpath d='M9 22V10h7a4 4 0 010 8h-7' fill='none' stroke='%23f4f0e7' stroke-width='3'/%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="/assets/app.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="/">ArtifactGuard</a>
+      <nav aria-label="Primary">
+        <a href="/">Analyze</a><a href="/compare">Benchmark</a
+        ><a href="/method" aria-current="page">Method</a>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="hero compact">
+        <div class="eyebrow">Method</div>
+        <h1>Evidence rules decide.</h1>
+        <p class="lede">
+          Sanity Context supplies structured records and Knowledge Base guidance. ArtifactGuard
+          applies explicit rules and returns source-linked deductions. No language model is involved
+          in the verdict.
+        </p>
+      </section>
+      <section class="method-grid">
+        <article class="method-card">
+          <span>01</span>
+          <h2>Structured retrieval</h2>
+          <p>
+            GROQ mode reads products, revisions, tests, compounds, artifact sensitivities and
+            interactions from the Sanity dataset.
+          </p>
+        </article>
+        <article class="method-card">
+          <span>02</span>
+          <h2>Knowledge retrieval</h2>
+          <p>
+            Knowledge Base mode supplies institutional guidance and peer-reviewed context,
+            separately from the structured dataset.
+          </p>
+        </article>
+        <article class="method-card">
+          <span>03</span>
+          <h2>Evidence resolution</h2>
+          <p>
+            The engine reads the Oddy ratings for the coupon that matches the artifact, checks
+            whether laboratories disagree and why, then adds known emissions, contact concerns,
+            enclosure context and where sources disagree about a product.
+          </p>
+        </article>
+        <article class="method-card">
+          <span>04</span>
+          <h2>Bounded output</h2>
+          <p>Six dispositions, no probabilities.</p>
+        </article>
+      </section>
+      <section class="panel architecture">
+        <pre>
+User scenario
+     │
+     ├───────────────┐
+     ▼               ▼
+Sanity Context     Sanity Context
+GROQ mode          Knowledge Base mode
+     │               │
+typed records      source context
+     └───────┬───────┘
+             ▼
+      deterministic resolver
+             │
+             ▼
+     source-linked disposition</pre>
+      </section>
+      <section class="closing">
+        <div class="eyebrow">Enclosure estimate</div>
+        <h2>Only the math the sources support.</h2>
+        <p>
+          The enclosure tool implements CCI's simplified <code>C = E A / (V N)</code> relationship
+          when physical inputs are supplied. It does not convert concentration into a universal
+          safety score.
+        </p>
+      </section>
+    </main>
+    <footer>
+      <span>ArtifactGuard</span><span>Sources: <code>research/sources.md</code></span>
+    </footer>
+  </body>
+</html>

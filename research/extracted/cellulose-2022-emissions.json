@@ -1,0 +1,24 @@
+{
+  "source": "cellulose-ethers",
+  "article": "https://www.nature.com/articles/s40494-022-00688-4",
+  "observations": [
+    {
+      "product": "Klucel G",
+      "supplier": "Deffner (Ashland)",
+      "purchased": "08.2021",
+      "compound": "acetic-acid",
+      "technique": "BEMMA microchamber with thermal desorption GC–MS, 1 g sample",
+      "observedEffect": "A high amount of acetic acid was detected (about 4000 µg/m³). The sample does not fulfil the BEMMA scheme.",
+      "quote": "One gram of Klucel® G (Deffner) was more detailed tested utilizing the BEMMA scheme with a quantification of the outgassing VOC and VVOC. A high amount of acetic acid can be detected (about 4000 µg/m3)."
+    },
+    {
+      "product": "Klucel G",
+      "supplier": "Deffner (Ashland)",
+      "purchased": "08.2021",
+      "compound": "formaldehyde",
+      "technique": "BEMMA microchamber with thermal desorption GC–MS, 1 g sample",
+      "observedEffect": "A small amount of formaldehyde was detected.",
+      "quote": "Furthermore, fragments of the hydroxypropyl cellulose can be detected with the VOC Tenax method and a small amount of formaldehyde was analyzed."
+    }
+  ]
+}

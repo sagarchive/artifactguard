@@ -1,0 +1,11 @@
+.env
+.env.*
+!.env.example
+node_modules/
+studio/node_modules/
+.DS_Store
+coverage/
+*.log
+studio/dist/
+studio/.sanity/
+_private/
