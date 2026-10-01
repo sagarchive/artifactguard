@@ -8,6 +8,8 @@ Built for the 2026 DEV / Sanity Challenge, Path One. Sanity Context MCP supplies
 
 **Dataset:** Sanity project `3yfxc6mg`, dataset `production` (public)
 
+![Screen recording: a plain-English question, the CONDITIONAL result with Knowledge Base guidance, then the eight lab ratings behind an Ethafoam result](docs/img/demo.gif)
+
 ![Ethafoam against lead in a sealed case. Eight tests rate the lead coupon, two of them T, so the answer is CONFLICTED. A first-match keyword lookup would report permanent (P).](docs/img/flagship-case.png)
 
 ## In plain words
